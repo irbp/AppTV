@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.italo.apptv.ShowDetailsActivity">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    </ListView>
+
+    <ImageView
+        android:id="@+id/image_details"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true" />
+
+    <TextView
+        android:id="@+id/name_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_details"
+        android:layout_marginTop="20dp"
+        android:text="Name: "
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/name_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/image_details"
+        android:layout_toRightOf="@id/name_field" />
+
+    <TextView
+        android:id="@+id/sinopse_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name_details"
+        android:layout_marginTop="20dp"
+        android:text="Summary: "
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/sinopse_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/name_details"
+        android:layout_toRightOf="@id/sinopse_field"/>
+
+    <TextView
+        android:id="@+id/rating_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sinopse_details"
+        android:layout_marginTop="20dp"
+        android:text="Rating: "
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/rating_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/sinopse_details"
+        android:layout_toRightOf="@id/rating_field"/>
+
+    <TextView
+        android:id="@+id/status_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rating_details"
+        android:layout_marginTop="20dp"
+        android:text="Status: "
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/status_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/rating_details"
+        android:layout_toRightOf="@id/status_field"/>
+
+</RelativeLayout>
